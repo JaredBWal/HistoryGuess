@@ -8,24 +8,13 @@ const TwoEventComp = ({event1, event2, score}) => {
  // change the score
  // get new events
 
-    const[eventTopName, eventTopId, eventBotName, eventBotId] = useState();
-
-
     return(
         <div className="event_container">
             <p className="score">Score: {score}</p>
             
             <h5 className="events">{event1[0]}</h5>
 
-            
-            <h5 className="events">Was</h5>
-
-            <div className="eventBtnContainer">
-                <button className="eventBtn">Before</button>
-                <button className="eventBtn margin-right " >After</button>
-            </div>
-            
-            
+            <h3 className="events">V.S</h3>
             
             <h5 className="events">{event2[0]}</h5>
 
