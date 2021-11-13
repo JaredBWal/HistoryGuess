@@ -3,10 +3,11 @@ body{
     background: rgba(79, 79, 240, 0.74);
 }
 
+
 .container{
     position: absolute;
-    width: 1024px;
-    height: 800px;
+    width: 60%;
+    height: 100%;
     border: 1px solid rgba(0, 0, 0, 0.2);
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
@@ -18,6 +19,7 @@ body{
     right: 0px;
     margin: auto;
     background: rgb(206, 203, 203);
+
 }
 
 .title{
@@ -30,13 +32,21 @@ body{
 }
 
 
+
+
 .events{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     font-weight: bold;
     margin-bottom: 5px;
-    color: rgb(47, 47, 47);
+    color: rgb(255, 255, 255);
     font-size: 50px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: auto;
+    z-index: 3;
 }
 
 .event_container{
@@ -90,12 +100,38 @@ body{
 
 
 .score{
-    float: right;
     font-size: 30px;
     font-weight: bold;
     color: darkblue;
+    text-align: center;
 }
 
-eventBtn.margin-right {
-    margin-right: 20px;
-  }
+
+
+
+.eventImg{
+    width: 100%;
+    height: 300px;
+    filter:brightness(50%)contrast(80%)
+
+}
+
+.eventTop{
+    position: relative;
+}
+
+.eventBot{
+    position: relative;
+}
+
+.eventBot events{
+    margin-top: 30px;
+}
+.eventText{
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: rgb(47, 47, 47);
+    font-size: 50px;
+    text-align: center;
+    margin-top: 0px;
+}

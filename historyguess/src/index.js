@@ -81,9 +81,19 @@ class HistoryGuess extends Component{
             topEvent: event1
         })
 
+        
         // picks random event for bot event
         var randNum2 = Math.floor(Math.random() * (historyEvents.length - 1 + 1)) + 0;
-        const event2 = this.state.eventBank[0][randNum2];
+        var event2 = this.state.eventBank[0][randNum2];
+        console.log("ev1", event1[0]);
+        console.log("ev2", event2[0]);
+
+
+        while (event2 === event1){
+
+            randNum2 = Math.floor(Math.random() * (historyEvents.length - 1 + 1)) + 0;
+            event2 = this.state.eventBank[0][randNum2];
+        }
 
         this.setState({
             botEvent: event2
@@ -109,7 +119,7 @@ class HistoryGuess extends Component{
                 )}
 
                 
-                <h5 className="events">Was</h5>
+                <h5 className="eventText">Was</h5>
 
                 <div className="eventBtnContainer">
                     <button className="eventBtn" onClick={this.checkBefore}>Before</button>
